@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Science Club Quiz!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Computer Science Club Quiz!</h1>
+        <div id="start">
+            <button class="button" onclick="startQuiz()">Start Quiz</button>
+        </div>
+        <div id="quiz">
+            <div id="question" class="question"></div>
+            <div id="options" class="options"></div>
+            <button class="button" onclick="submitAnswer()">Confirm</button>
+        </div>
+        <div id="result">
+            <div id="score"></div>
+            <button class="button" onclick="restartQuiz()">Restart Quiz</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

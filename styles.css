@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --text-colour: #fff;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #fff; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: var(--text-colour); 
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px;
+    background: #000000d3; 
+    padding: 20px;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    color: var(--text-colour); 
+    margin-bottom: 20px;
+}
+
+#quiz, #result {
+    display: none;
+}
+
+.question {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: var(--text-colour); 
+}
+
+.options {
+    margin-bottom: 20px;
+}
+
+.option {
+    display: block;
+    margin-bottom: 15px;
+    color: var(--text-colour); 
+}
+
+.option input {
+    margin-right: 10px;
+    accent-color: var(--text-colour); 
+}
+
+.button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background: var(--text-colour); 
+    color: #000000; 
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+    text-align: center;
+    transition: background 0.3s, color 0.3s;
+    font-family: 'Raleway', sans-serif;
+}
+
+.button:hover {
+    background: #555555; 
+    color: var(--text-colour); 
+}
+
+#score {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    color: var(--text-colour); 
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 18px; 
+    }
+    .question {
+        font-size: 16px; 
+    }
+    .option {
+        font-size: 14px; 
+    }
+    .button {
+        font-size: 16px; 
+        padding: 12px;
+    }
+    #score {
+        font-size: 18px; 
+    }
+}
